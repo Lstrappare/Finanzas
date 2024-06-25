@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software de Finanzas</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+    <h1 class="text-3xl font-bold mb-4">Ingreso de Datos</h1>
+    
+    <form id="dataForm" class="bg-white p-6 rounded shadow-md">
+        <h2 class="text-2xl font-semibold mb-2">Empresa Origen</h2>
+        <div class="mb-4">
+            <label class="block text-gray-700">Nombre de la empresa:
+                <input type="text" id="empresa1" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Tiempo de adquisición:
+                <input type="number" id="tim" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Costo de adquisición:
+                <input type="number" id="costo" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Gastos de instalación:
+                <input type="number" id="instalacion" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Valor de desecho:
+                <input type="number" id="valdesecho" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Vida útil:
+                <input type="number" id="vidutil" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+
+        <h2 class="text-2xl font-semibold mb-2">Empresa Número 1</h2>
+        <div class="mb-4">
+            <label class="block text-gray-700">Nombre de la empresa:
+                <input type="text" id="empresa2" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Precio de maquinaria:
+                <input type="number" id="MO1" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Gastos de instalación:
+                <input type="number" id="instalacion1" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Vida útil:
+                <input type="number" id="vidautil1" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Valor de desecho:
+                <input type="number" id="valdesecho1" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Incremento de ventas por cada año:</label>
+            <div class="grid grid-cols-5 gap-2">
+                <input type="number" id="no1" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                <input type="number" id="no2" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                <input type="number" id="no3" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                <input type="number" id="no4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                <input type="number" id="no5" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </div>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Disminución de la mano de obra por cada año:</label>
+            <div class="grid grid-cols-5 gap-2">
+                <input type="number" id="mano1" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                <input type="number" id="mano2" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                <input type="number" id="mano3" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                <input type="number" id="mano4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                <input type="number" id="mano5" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </div>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Precio de compra de maquinaria usada:
+                <input type="number" id="compra1" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+
+        <h2 class="text-2xl font-semibold mb-2">Empresa Número 2</h2>
+        <div class="mb-4">
+            <label class="block text-gray-700">Nombre de la empresa:
+                <input type="text" id="empresa3" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Precio de maquinaria:
+                <input type="number" id="MO2" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Gastos de instalación:
+                <input type="number" id="instalacion2" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Vida útil:
+                <input type="number" id="vidautil2" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Valor de desecho:
+                <input type="number" id="valdesecho2" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Ventas por año:
+                <input type="number" id="no" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Disminución de la mano de obra por año:
+                <input type="number" id="mano" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Precio de compra de maquinaria usada:
+                <input type="number" id="compra2" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Impuesto a la tasa (en decimal):
+                <input type="number" step="0.01" id="tas" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Costo de capital (en decimal):
+                <input type="number" step="0.01" id="capital" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+            </label>
+        </div>
+        
+        <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="calcular()">Calcular</button>
+    </form>
+    
+    <h2 class="text-2xl font-semibold mt-6">Resultados</h2>
+    <pre id="resultados" class="bg-white p-4 rounded shadow-md"></pre>
+
+    <script src="script.js"></script>
+</body>
+</html>
